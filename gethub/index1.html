@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Car Website</title>
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#bg-video {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 200px;
+}
+.my-button {
+    background-color: #3405f2; 
+    color: white;               
+    padding: 15px 30px;         
+    border: none;               
+    border-radius: 8px;         
+    font-size: 18px;
+    cursor: pointer;            
+}
+.my-button:hover {
+    background-color: #45a062;
+}
+.section {
+    padding: 100px ;
+    text-align: center;
+    background: rgba(26, 25, 24, 0.93);
+    color: white;
+}
+h1 { color: red; }
+h2 { color: rgb(43, 137, 19); }
+h3 { color: aqua; }
+h4 { color: blue; }
+.car-images {
+    display: flex;           
+    justify-content: center; 
+    gap: 10px;               
+    flex-wrap: wrap;        
+}
+
+img.animated {
+    width: 150px;            
+    border-radius: 10px;
+    animation: zoomRotate 10s infinite alternate;
+    box-shadow: 0 0 15px #0ff;
+    transition: transform 0.3s;
+}
+img.animated:hover {
+    transform: scale(1.2);  
+}
+@keyframes zoomRotate {
+    0% { transform: scale(1) rotate(0deg); box-shadow: 0 0 15px #0ff; }
+    50% { transform: scale(1.2) rotate(5deg); box-shadow: 0 0 30px #f0f; }
+    100% { transform: scale(1.3) rotate(0deg); box-shadow: 0 0 15px #0ff; }
+}
+img.full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-box {
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px); /* លើឡើង */
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* shadow ធំឡើង */
+    }
+    p{
+        color: #f0f;
+    }
+</style>
+</head>
+<body>
+<video autoplay loop muted id="bg-video">
+    <source src="./IMG_2065.MP4" type="video/mp4">
+</video>
+<div class="content">
+    <h1>Welcome To My Website</h1>
+    <button class="my-button">See More</button>
+</div>
+<div class="section">
+    <h2>CAR SHOPPING</h2>
+    <h3>Hello My Name Is Peng Ly</h3>
+   <div class="car-images">
+        <div class="card">
+            <img class="animated" src="./images (3).jpg" alt="car1">
+            <P>Name:satosa</P>
+            <button class="my-button">30000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./download (3).jpg" alt="car2">
+            <p>Name:Makla</p>
+            <button class="my-button">3400000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./download (4).jpg" alt="car3">
+            <p>Name:Nabaly</p>
+        <button class="my-button">3000000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./download (5).jpg" alt="car4">
+            <p>Name:Naronamaly</p>
+            <button class="my-button">1900000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./images (4).jpg" alt="car5">
+            <p>Name:sam sam</p>
+            <button class="my-button">30000$</button>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <h1>Look At Website</h1>
+ <h3>
+        A modern car is a combination of advanced engineering and technology designed to provide comfort, safety, and efficiency for everyday use. Most modern cars feature fuel-efficient engines, electronic fuel systems, and smart driving technology.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur dolore vitae officiis eum in. Corrupti dolorem numquam autem illum odit, itaque fuga, ratione consequatur recusandae, accusantium earum nobis reiciendis saepe.
+        Quod facere fugiat possimus, quibusdam consequatur minima natus et commodi ab, dolore exercitationem nostrum praesentium aspernatur iusto porro ullam eligendi. Dolores recusandae excepturi delectus perspiciatis. Officiis tempore soluta alias reprehenderit?
+        Animi voluptate laboriosam iste assumenda optio sequi minus velit fuga ea, praesentium aut earum a sint adipisci dolor, perferendis at. Hic, doloremque neque? Nostrum est animi beatae! Velit, mollitia aperiam?
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate ad optio nihil delectus recusandae! Voluptates laborum, veritatis est nostrum aut repellendus iusto quos, culpa saepe adipisci corporis soluta numquam.
+ </h3>
+</div>
+<div class="section">
+  <div class="car-images">
+        <div class="card">
+            <img class="animated" src="./images (6).jpg" alt="car1">
+            <p>Name:BMW</p>
+            <button class="my-button">30000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./images (5).jpg" alt="car2">
+            <p>Name:BWM</p>
+           <button class="my-button">43000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./images (3).jpg" alt="car3">
+            <p>Name:kla sor</p>
+           <button class="my-button">50000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./images (2).jpg" alt="car4">
+            <p>Name:galaxy</p>
+           <button class="my-button">10000000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./images.jpg" alt="car5">
+            <p>Name:Yak</p>
+            <button class="my-button">130000000$</button>
+        </div>
+    </div>
+    <div class="section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus nam eligendi corporis sunt sint, deserunt aperiam porro. Non sint voluptates mollitia nesciunt dolorem sed officiis ab. Ut, officiis a!
+        Quibusdam rerum fugiat facilis recusandae, qui similique non architecto ab saepe, ipsam earum deleniti praesentium numquam! Minus, nihil! Inventore vel impedit voluptas modi veritatis repudiandae officiis tempore error quibusdam nobis?
+        Cupiditate quibusdam nemo assumenda dolorum blanditiis suscipit deserunt quisquam animi laborum, minima est mollitia modi sapiente aperiam dicta voluptatem incidunt quae obcaecati nam consectetur consequatur. Amet ex explicabo deserunt tempora?
+        Pariatur aperiam sapiente possimus, atque dolor nesciunt aspernatur amet tempora et unde ad quo dolores, qui, nostrum deleniti maiores dignissimos. Nam rem soluta excepturi numquam eveniet dolore quasi vitae. Quaerat?
+        Expedita consequuntur atque exercitationem quibusdam esse neque maiores vero impedit, aspernatur dignissimos? Ratione dolor dolorum fugit quisquam, commodi nobis illo, voluptate laborum dignissimos nemo corporis minus obcaecati sequi, eum fugiat.
+        Commodi recusandae nihil inventore molestias culpa, cumque assumenda reprehenderit minima fugit impedit nam ratione obcaecati minus doloribus tenetur odio vitae necessitatibus quasi error veniam eum. Sit quo dolores repellendus ipsum!
+        Est sed quas incidunt vero. At fugit cupiditate, quia modi voluptates iste libero quibusdam eligendi tempore cumque maiores inventore id tenetur mollitia autem consequatur expedita ex quo neque totam ab?
+        Maiores repellat ad optio. Vel quos ea architecto sapiente facilis, totam natus eius, repudiandae numquam explicabo, labore ipsa qui exercitationem ad consequuntur molestiae maiores iusto minus nulla? Laboriosam, in velit!
+        Quam architecto expedita corrupti eius praesentium blanditiis hic optio eveniet, veritatis ab facilis saepe consectetur explicabo, beatae rerum placeat suscipit laboriosam. Facere inventore corporis ducimus harum illo voluptate voluptas iure.
+        Rerum harum possimus officiis quae nisi ipsum dolores hic earum, esse veniam voluptatum est vero nostrum sapiente, repudiandae eius debitis deserunt dolorum facere culpa corporis blanditiis non! Consequatur, cum delectus?
+    </div>
+    <div class="section">
+        <h1>Tank You</h1>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
 
