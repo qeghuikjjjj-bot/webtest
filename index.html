@@ -1,1 +1,272 @@
-<h2>Hello World</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#bg-video {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+h1, button {
+    color: red;
+    font-size: 40px;
+}
+
+.my-button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+button :hover{
+    
+}
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(26, 25, 24, 0.93);
+    color: white;
+    margin-top: -5px;
+}
+
+h2 { color: aqua; }
+h3 { color: aqua; }
+
+/* ===== CAR CARDS ===== */
+.car-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: #111;
+    border-radius: 12px;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+img.animated {
+    width: 100%;
+    border-radius: 10px;
+    animation: zoomRotate 1s infinite alternate;
+    box-shadow: 0 0 15px #0ff;
+}
+
+@keyframes zoomRotate {
+    0% { transform: scale(1) rotate(0deg); }
+    100% { transform: scale(1.1) rotate(3deg); }
+}
+h2,h3{
+    color: red;
+}
+h1{
+    color: aqua;
+}
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay loop muted id="bg-video">
+    <source src="./IMG_2046.MP4" type="video/mp4">
+</video>
+
+<!-- CONTENT ON VIDEO -->
+<div class="content">
+    <br>
+    <u><h1>Welcome To My Website</h1></u>
+    <button class="my-button">See More</button>
+</div>
+
+<!-- SECTION UNDER VIDEO -->
+<div class="section">
+    <h2>CAR SHOPPING</h2>
+    <h3>Hello My Name Is Peng Ly</h3>
+
+    <div class="car-images">
+
+        <div class="card">
+            <img class="animated" src="./images (3).jpg" alt="car1">
+            <p>Name: satosa</p>
+            <button class="my-button">30000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (3).jpg" alt="car2">
+            <p>Name: Makla</p>
+            <button class="my-button">3400000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (4).jpg" alt="car3">
+            <p>Name: Nabaly</p>
+            <button class="my-button">3000000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (5).jpg" alt="car4">
+            <p>Name: Naronamaly</p>
+            <button class="my-button">1900000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./images (4).jpg" alt="car5">
+            <p>Name: sam sam</p>
+            <button class="my-button">30000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./images (6).jpg" alt="car6">
+            <p>Name: BMW</p>
+            <button class="my-button">30000$</button>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore dolores in quaerat officiis pariatur consectetur placeat, ullam, dicta, nihil dolor blanditiis labore assumenda officia deleniti rerum soluta debitis non facilis.
+        Id suscipit deleniti error quis quo odio veritatis a atque fugit expedita, at consequuntur velit porro doloribus excepturi accusantium molestiae praesentium architecto perferendis perspiciatis facilis mollitia dicta? Aperiam, perferendis aspernatur?
+        Fugiat vero quas magni inventore magnam maxime aperiam ullam iste vel quasi corrupti nobis excepturi omnis unde corporis repudiandae, molestias soluta reiciendis sapiente maiores possimus dignissimos. Error optio architecto vel.
+        Explicabo minus nostrum accusantium, est quisquam quibusdam illo totam dignissimos id recusandae. Voluptates sint iusto deserunt porro aut doloribus, eos mollitia nobis quaerat cupiditate voluptas reprehenderit nihil nam illum consequuntur.
+        Fuga, dolor deserunt laudantium quibusdam molestiae vitae possimus excepturi illo fugit rem totam iste accusamus at quas officia alias sequi maxime. Quaerat repellat odio sunt officia vero deserunt sed rem.
+        Vero facere neque minima sint eligendi asperiores deleniti facilis, reiciendis consequuntur velit cum eos rem id magnam. Tempore et esse odit, aspernatur officia neque quasi, eligendi eum, illum nostrum commodi?
+        Culpa libero impedit sint. Deserunt aperiam necessitatibus impedit tempora recusandae quidem ipsum cupiditate, modi obcaecati explicabo sint ex, ad saepe dicta accusantium doloremque distinctio mollitia quaerat. Nemo, ut obcaecati. Dolorum?
+        Tenetur ullam vel laudantium ea beatae at praesentium facere nihil cumque incidunt? Nesciunt facere eius voluptatibus ducimus minus nostrum quam optio, saepe, qui beatae fuga perferendis, sapiente officia iusto. Et?</p>
+        </div>
+
+    </div>
+    <div class="section">
+    <h2>CAR SHOPPING 2 </h2>
+    <div class="car-images">
+
+        <div class="card">
+            <img class="animated" src="./images (3).jpg" alt="car1">
+            <p>Name: satosa</p>
+            <button class="my-button">30000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (3).jpg" alt="car2">
+            <p>Name: Makla</p>
+            <button class="my-button">3400000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (4).jpg" alt="car3">
+            <p>Name: Nabaly</p>
+            <button class="my-button">3000000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (5).jpg" alt="car4">
+            <p>Name: Naronamaly</p>
+            <button class="my-button">1900000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./images (4).jpg" alt="car5">
+            <p>Name: sam sam</p>
+            <button class="my-button">30000$</button>
+        </div>
+        <div class="card">
+            <img class="animated" src="./images (6).jpg" alt="car6">
+            <p>Name: BMW</p>
+            <button class="my-button">30000$</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam expedita facere beatae dolor quis! Tenetur dolorem ratione vitae voluptatem quidem esse atque fuga eos dignissimos vel, accusantium nulla necessitatibus repudiandae.
+        Aspernatur id voluptas dolore nesciunt nobis placeat quod perspiciatis minima beatae, quibusdam veritatis, dolores consectetur molestias deserunt doloribus quam fugiat molestiae sit incidunt. Nisi ex pariatur reiciendis animi accusamus ad!
+        Natus temporibus iusto nobis officiis libero atque ea architecto. Ut saepe alias eum pariatur neque aliquam facere. Laudantium saepe necessitatibus perspiciatis libero tenetur hic ex ad suscipit, esse, fugit explicabo?
+        Aperiam tempora impedit blanditiis quasi, cupiditate ipsam eos. Facilis necessitatibus culpa, ex dicta cum quam veritatis, repellendus eveniet nesciunt ducimus quibusdam quis, saepe laborum repudiandae? Temporibus numquam quia possimus iusto!
+        Neque corrupti laborum id soluta dignissimos numquam sit distinctio labore quod debitis rem nostrum voluptatibus, consequatur tempora ducimus nihil amet laboriosam ipsa fuga dolorem illo? Ratione animi illum quos quisquam?
+        Placeat sequi repudiandae distinctio modi sunt inventore neque nesciunt in, nihil laboriosam exercitationem tempora voluptates nostrum consectetur ipsa, voluptatibus, dignissimos accusantium repellat ducimus. Ea totam consequuntur odit quasi praesentium accusamus?
+        Consequuntur saepe rerum dolor debitis quos. Aliquid, quia omnis eligendi mollitia cumque architecto totam magni voluptatibus consequuntur exercitationem non velit alias corporis reiciendis at consequatur. Placeat accusantium quo quidem beatae!
+        Provident hic quidem rerum delectus, voluptatum quae harum error ex, recusandae placeat at minima, minus maxime nesciunt unde. Sit ab expedita dignissimos praesentium sunt officia, dolores modi? Reprehenderit, tempore aliquid.</p>
+        <div class="section">
+    <h2>CAR SHOPPING 3 </h2>
+    <div class="car-images">
+
+        <div class="card">
+            <img class="animated" src="./images (3).jpg" alt="car1">
+            <p>Name: satosa</p>
+            <button class="my-button">30000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (3).jpg" alt="car2">
+            <p>Name: Makla</p>
+            <button class="my-button">3400000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (4).jpg" alt="car3">
+            <p>Name: Nabaly</p>
+            <button class="my-button">3000000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./download (5).jpg" alt="car4">
+            <p>Name: Naronamaly</p>
+            <button class="my-button">1900000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./images (4).jpg" alt="car5">
+            <p>Name: sam sam</p>
+            <button class="my-button">30000$</button>
+        </div>
+
+        <div class="card">
+            <img class="animated" src="./images (6).jpg" alt="car6">
+            <p>Name: BMW</p>
+            <button class="my-button">30000$</button>
+        </div>
+</div>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quibusdam libero, magnam, placeat doloribus voluptates corrupti asperiores quia doloremque iure amet voluptatibus recusandae, eum eaque quae aspernatur architecto quos?
+Enim, nulla maxime quisquam fugit eveniet, ad tempore eligendi id cupiditate quia sapiente sequi libero veritatis ipsum, in porro obcaecati quae. Sunt, neque ex modi sed accusantium numquam reiciendis laborum.
+Deleniti accusamus et earum qui, odit repudiandae nam at laudantium alias quidem suscipit labore, aut adipisci placeat voluptates omnis? Voluptates error officia fugiat quod expedita asperiores, corporis esse atque ducimus!
+Quos dignissimos rerum qui voluptates! Assumenda, ipsam molestias officiis dolore eos aliquid distinctio tenetur minima porro natus non cumque quia dolorum vel id cupiditate facere saepe quae a vero? Quibusdam.
+Deserunt ad excepturi sit, cum voluptatem dicta veniam dolorum reprehenderit. Quibusdam tempora, minima labore nostrum harum beatae corporis vitae voluptatum voluptate sunt possimus totam soluta, cupiditate exercitationem, libero odio commodi.
+Omnis, repudiandae eaque? Nemo exercitationem rem ad obcaecati tempora facere. Odit vero inventore deserunt commodi sequi aut cumque corrupti aliquid temporibus ducimus, nobis facere, dolor delectus. Unde assumenda necessitatibus provident!
+Enim, iure repellendus eaque numquam unde tenetur illum dignissimos ea. Perspiciatis omnis neque officiis quia vel voluptatum molestiae magnam nostrum. Repudiandae molestias natus praesentium nesciunt sapiente vitae repellat beatae temporibus!
+Voluptatum corporis placeat mollitia quo. Aliquam fugiat rerum, suscipit quis repudiandae ipsum, repellendus id quos voluptas perferendis consectetur facilis facere, fuga quae esse cumque! Eligendi sunt error suscipit. Illo, explicabo?</p>
+<div class="section">
+    <center> 
+        <h1>
+           <button class="my-button">Tank You</button>
+        </h1>
+
+    </center>
+</div>
+</body>
+</html>
